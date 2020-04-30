@@ -1,10 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import Header from './components/Header';
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>I'm so tired of this shit</Text>
+      <Header />
+      <Icon name='remove' size={20} color='firebrick' />
     </View>
   );
 };
@@ -12,12 +15,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    color: 'red',
-    fontSize: 30,
   },
 });
 
