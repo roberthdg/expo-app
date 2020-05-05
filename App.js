@@ -1,21 +1,19 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import Header from './components/Header';
-import Icon from 'react-native-vector-icons/dist/FontAwesome';
+import { StyleSheet, Text, View } from 'react-native';
 
-const App = () => {
+export default function App() {
   return (
     <View style={styles.container}>
-      <Header />
-      <Icon name='remove' size={20} color='firebrick' />
+      <Text>Open up App.js to start working on your app!</Text>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
-
-export default App;
